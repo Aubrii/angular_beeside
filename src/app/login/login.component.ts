@@ -31,7 +31,7 @@ this.createFormUser()
     console.log('get value form',this.form.getRawValue())
     if (this.form.invalid) {
       console.log('ERROR')
-    } // @ts-ignore
+    }
     this.userService.login(this.form.controls['email'].value, this.form.controls['password'].value).subscribe((data)=>{
       console.log('data', data)
     })
